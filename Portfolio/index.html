@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Personal Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add CSS for the slideshow */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    /* CSS for skills section */
+    .skills {
+      text-align: center;
+    }
+
+    .hello {
+      margin-bottom: 20px;
+    }
+
+    .containers {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .skillbar {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="#"><button>Home</button></a></li>
+            <li><a href="#about"><button>About</button></a></li>
+            <li><a href="#skills"><button>Skills</button></a></li>
+            <li><a href="#contact"><button>Contact Me</button></a></li>
+        </ul>        
+    </nav>
+    <div class="landing">
+        <div class="intro">
+          <h3>Hi, I'm <span>VENKATA SRAVANTHI ADDAGADA</span></h3>
+          <h3>A WEB DEVELOPER</h3>
+          <h3>This is my Portfolio Website for my details.</h3>     
+        </div>          
+    </div>
+  </header>
+
+  <section class="about" id="about">
+    <div class="aboutme">
+      <h1>About Me</h1>
+      <p>I am a curious and creative person who is always eager to learn new things. I am passionate about helping others and making the world a better place. I am also a bit of a perfectionist, which means that I always strive to do my best and produce high-quality work.</p>
+      <p>In my free time, I enjoy reading, writing, playing video games, and spending time with my friends and family. I am also a big fan of science and technology, and I love learning about new discoveries and inventions.</p>
+      <p>I am still under development, but I am excited to see what the future holds for me. I hope to continue learning and growing, and to use my abilities to make a positive impact on the world.</p>  
+    </div>
+    <img src="c:\Users\sravanthi\OneDrive\Pictures\sravs.jpg">
+    <div class="education">
+      <div class="col">
+        <div class="contents">
+          <h1>EDUCATION</h1>
+          <div class="box">
+            <h4>INTERMEDIATE(2020-2022)</h4>
+            <p>I have completed my Intermediate in Narayana Junior College, Vijayawada</p>
+          </div>
+          <div class="box">
+            <h4>B-TECH(2022-2026)</h4>
+            <p>I'm currently studying as a computer science engineering student in KAKINADA INSTITUTE OF ENGINEERING AND TECHNOLOGY korangi, Kakinada</p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h1>My Skills</h1>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="hello">
+          <div class="containers">
+            <h2>PYTHON</h2>
+            <div class="skillbar python">70%</div>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="hello">
+          <div class="containers">
+            <h2>HTML</h2>
+            <div class="skillbar html">60%</div>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="hello">
+          <div class="containers">
+            <h2>CSS</h2>
+            <div class="skillbar css">60%</div>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="hello">
+          <div class="containers">
+            <h2>JAVA SCRIPT</h2>
+            <div class="skillbar js">30%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    <script>
+      // JavaScript for slideshow
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </section>
+
+  <section class="contact" id="contact">
+    <h1>Contact Me</h1>
+    <div class="container">
+      <main class="row">
+        <section class="col left">
+          <div class="contactTitle">
+            <h2>Get In Touch</h2>
+            <p></p>
+          </div>
+          <div class="contactInfo">
+            <div class="iconGroup">
+              <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="details">
+                <span>Phone</span>
+                <span>+91 9640509787</span>
+              </div>
+            </div>
+            <div class="iconGroup">
+              <div class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="details">
+
+

@@ -1,0 +1,176 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Landing section styles */
+.landing {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.landing .intro h3 {
+  margin-bottom: 10px;
+}
+
+.landing .intro h3 span {
+  color: #ff6600;
+}
+
+/* About section styles */
+.about {
+  padding: 50px;
+}
+
+.aboutme {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.aboutme img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.education .col {
+  width: 50%;
+}
+
+.education .contents {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.education .box {
+  margin-bottom: 20px;
+}
+
+/* Skills section styles */
+.skills {
+  padding: 50px;
+}
+
+.hello {
+  margin-bottom: 20px;
+}
+
+.containers {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.skillbar {
+  background-color: #4CAF50;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Contact section styles */
+.contact {
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+.contact .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact .col {
+  flex: 1;
+}
+
+.contact .col.left {
+  margin-right: 50px;
+}
+
+.contact .contactTitle h2 {
+  margin-bottom: 20px;
+}
+
+.contact .iconGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact .icon {
+  margin-right: 10px;
+}
+
+.contact .details span {
+  display: block;
+}
+
+.contact .socialMedia a {
+  color: #333;
+  margin-right: 10px;
+}
+
+/* Form styles */
+.messageForm .inputGroup {
+  margin-bottom: 20px;
+}
+
+.messageForm input[type="text"],
+.messageForm input[type="email"],
+.messageForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.messageForm textarea {
+  resize: none;
+}
+
+.messageForm button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.messageForm button:hover {
+  background-color: #ff6600;
+}
